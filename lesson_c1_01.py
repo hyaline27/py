@@ -27,7 +27,7 @@ def demo_string():
     print 6, len(strc)
     print 7, '-'.join(['a', 'b', 'c'])
     print 8, strc.split(' ')
-    print 9, strc.find('ello')
+    print 9, strc.find('l')
 
 
 def demo_operation():
@@ -248,7 +248,7 @@ if __name__ == '__main__':
 
     # print 'hello nowcoder'
     # comment
-    # demo_string()
+    demo_string()
     # demo_operation()
     # demo_buildinfunction()
     # demo_controlflow()
