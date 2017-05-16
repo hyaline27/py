@@ -47,7 +47,7 @@ def demo_buildinfunction():
     print 3, abs(-2)  # fabs,Math.fabs
     print 4, range(1, 10, 3)
     print 5, dir(list)
-    x = 2
+    x = 9
     print 6, eval('x + 3')
     print 7, chr(65), ord('a')
     print 8, divmod(11, 3)
@@ -122,7 +122,7 @@ def demo_dict():
     dicta = {4: 16, 1: 1, 2: 4, 3: 9}
     print 1, dicta
     print 2, dicta.keys(), dicta.values()
-    print 3, dicta.has_key(1), dicta.has_key('3')
+    print 3, dicta.has_key(1),
     # for map<int,int>::iterator it = x.begin(); it != x.end()
     for key, value in dicta.items():
         print 'key-value:', key, value
@@ -133,14 +133,14 @@ def demo_dict():
     print dictb
     dicta.pop(4)
     print 6, dicta
-    del dicta[1]
+    del dicta[3]
     print 7, dicta
 
 
 def demo_set():
     lista = [1, 2, 3]
     seta = set(lista)
-    setb = set((2, 3, 4))
+    setb = {2, 3, 4}
     print 1, seta
     print 3, seta.intersection(setb), seta & setb
     print 4, seta | setb, seta.union(setb)
@@ -148,7 +148,7 @@ def demo_set():
     seta.add('x')
     print 6, seta
     print len(seta)
-    print seta.isdisjoint(set((1, 2)))
+    print seta.isdisjoint({1, 2})
 
 
 class User:
@@ -248,7 +248,7 @@ if __name__ == '__main__':
 
     # print 'hello nowcoder'
     # comment
-    demo_string()
+    # demo_string()
     # demo_operation()
     # demo_buildinfunction()
     # demo_controlflow()
@@ -256,5 +256,5 @@ if __name__ == '__main__':
     # demo_dict()
     # demo_set()
     # demo_exception()
-    # demo_random()
-    demo_re()
+    demo_random()
+    # demo_re()
